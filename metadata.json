@@ -1,0 +1,6 @@
+{
+  "name": "Santhali FLN Teacher Assistant",
+  "description": "Bilingual Hindi-Santhali teaching assistant for rural educators, featuring voice translation, NIPUN Bharat curriculum stories, printable worksheets, Ol Chiki flashcards, and offline reading assessments.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

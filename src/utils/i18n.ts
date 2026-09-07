@@ -1,0 +1,231 @@
+import { UILang } from '../types';
+
+export const UI_STRINGS: Record<UILang, Record<string, string>> = {
+  hi: {
+    appTitle: 'संथाली-हिंदी शिक्षक साथी',
+    appSubtitle: 'निपुण भारत (FLN) द्विभाषी शिक्षण एवं अभ्यास मंच',
+    navTranslate: 'भाषांतर (ध्वनि व अनुवाद)',
+    navCurriculum: 'निपुण पाठ्यक्रम व कहानियाँ',
+    navWorksheets: 'कार्यपत्रक व प्रिंट',
+    navFlashcards: 'चित्र फ्लैशकार्ड व अक्षर लेखन',
+    navTracking: 'छात्र प्रगति व पठन मूल्यांकन',
+    navOffline: 'ऑफ़लाइन व Android ऐप',
+    
+    // Header & Common
+    language: 'भाषा:',
+    onlineMode: 'ऑनलाइन (AI सक्रिय)',
+    offlineMode: 'ऑफ़लाइन मोड (स्थानीय डेटा)',
+    selectGrade: 'कक्षा चुनें:',
+    playAudio: 'बोलकर सुनाएँ',
+    slowAudio: 'धीमी आवाज़ (कक्षा हेतु)',
+    copy: 'कॉपी करें',
+    copied: 'कॉपी हो गया!',
+    reset: 'रीसेट करें',
+    save: 'सहेजें',
+    print: 'प्रिंट / PDF डाउनलोड',
+    loading: 'प्रतीक्षा करें...',
+    error: 'कोई त्रुटि हुई। कृपया पुनः प्रयास करें।',
+
+    // Voice & Translation
+    transTitle: 'हिंदी ⇄ संथाली ध्वनि एवं पाठ अनुवाद',
+    transDesc: 'बोलकर या लिखकर हिंदी को प्रामाणिक ओल चिकी (ᱚᱞ ᱪᱤᱠᱤ) एवं देवनागरी उच्चारण में बदलें।',
+    micRecord: 'माइक दबाकर बोलें',
+    recording: 'सुन रहा है... बोलिए',
+    stopRecording: 'रोकें',
+    speakHint: 'जैसे: "किताब खोलो और पढ़ो" या "आज सब बच्चे खुश हैं"',
+    translateBtn: 'अनुवाद करें (Translate)',
+    quickPhrasesTitle: 'कक्षा में रोज़ाना उपयोग होने वाले वाक्य',
+    olChikiScript: 'ओल चिकी लिपि (Ol Chiki)',
+    devanagariPhonetic: 'देवनागरी उच्चारण (शिक्षक मार्गदर्शिका)',
+    romanPhonetic: 'रोमन वर्तनी (Roman Guide)',
+    classroomTip: 'कक्षा शिक्षण सुझाव:',
+    wordBreakdown: 'शब्द-दर-शब्द अर्थ:',
+
+    // Curriculum & Story
+    currTitle: 'निपुण भारत बुनियादी साक्षरता एवं संख्या ज्ञान (FLN)',
+    currDesc: 'बालवाटिका से कक्षा 3 तक के दक्षताओं पर आधारित द्विभाषी पाठ व कहानियाँ।',
+    generateStoryBtn: 'नई निपुण कहानी तैयार करें (AI)',
+    theme: 'विषय / थीम:',
+    competency: 'दक्षता:',
+    storyReader: 'द्विभाषी कहानी वाचन',
+    comprehensionQ: 'बोध प्रश्न (Comprehension Questions)',
+    vocabHeader: 'कहानी के मुख्य शब्द',
+    readAloudStory: 'पूरी कहानी सुनें',
+
+    // Worksheets
+    worksheetTitle: 'द्विभाषी अभ्यास कार्यपत्रक जनरेटर',
+    worksheetDesc: 'ग्रामीण प्राथमिक शालाओं हेतु प्रिंटेबल अभ्यास पत्रक (PDF/प्रिंट तैयार)।',
+    generateWorksheetBtn: 'नया कार्यपत्रक बनाएँ',
+    worksheetPrintTip: 'इस पत्रक को मोबाइल से सीधे प्रिंटर पर भेजें या WhatsApp द्वारा अभिभावकों से साझा करें।',
+
+    // Flashcards & Tracing
+    flashcardTitle: 'चित्र फ्लैशकार्ड व ओल चिकी अक्षर लेखन',
+    flashcardDesc: 'कार्ड पलटकर संथाली-हिंदी शब्द सीखें और स्लेट पर अक्षर लिखने का अभ्यास करें।',
+    flipCard: 'कार्ड पलटें',
+    tracingTitle: 'डिजिटल स्लेट: ओल चिकी अक्षर लिखाई अभ्यास',
+    clearSlate: 'स्लेट साफ़ करें',
+    strokeColor: 'स्याही का रंग:',
+
+    // Assessment Tracker
+    trackingTitle: 'छात्र पठन प्रवाह एवं बुनियादी मूल्यांकन ट्रैकर',
+    trackingDesc: 'बिना इंटरनेट के भी छात्र का WPM (शब्द प्रति मिनट) और परीक्षा परिणाम सहेजें।',
+    addStudent: 'नया छात्र जोड़ें',
+    recordFluency: 'पठन प्रवाह (Oral Fluency) मापें',
+    totalStudents: 'कुल पंजीकृत छात्र',
+    avgWpm: 'कक्षा औसत WPM',
+    targetWpm: 'निपुण लक्ष्य (कक्षा 2-3)',
+    exportData: 'डेटा निर्यात (JSON/बैकअप)',
+  },
+
+  sat: {
+    appTitle: 'ᱥᱟᱱᱛᱟᱲᱤ-ᱦᱤᱱᱫᱤ ᱢᱟᱪᱮᱛ ᱜᱚᱲᱚ',
+    appSubtitle: 'ᱱᱤᱯᱩᱱ ᱵᱷᱟᱨᱚᱛ (FLN) ᱵᱟᱨ-ᱯᱟᱹᱨᱥᱤ ᱥᱮᱪᱮᱫ ᱟᱨ ᱯᱟᱲᱦᱟᱣ',
+    navTranslate: 'ᱛᱚᱨᱡᱚᱢᱟ (ᱨᱚᱲ ᱟᱨ ᱚᱞ)',
+    navCurriculum: 'ᱱᱤᱯᱩᱱ ᱯᱟᱲᱦᱟᱣ ᱟᱨ ᱠᱟᱹᱦᱱᱤ',
+    navWorksheets: 'ᱠᱟᱹᱢᱤ ᱥᱟᱠᱟᱢ ᱟᱨ ᱪᱷᱟᱯᱟ',
+    navFlashcards: 'ᱪᱤᱛᱟᱹᱨ ᱠᱟᱨᱰ ᱟᱨ ᱚᱞ',
+    navTracking: 'ᱯᱟᱹᱴᱷᱩᱣᱟᱹ ᱞᱟᱦᱟᱱᱛᱤ ᱟᱨ ᱡᱚᱠᱷᱟ',
+    navOffline: 'ᱚᱯᱷᱞᱟᱭᱤᱱ ᱟᱨ ᱮᱱᱰᱨᱚᱭᱤᱰ',
+
+    // Header & Common
+    language: 'ᱯᱟᱹᱨᱥᱤ:',
+    onlineMode: 'ᱚᱱᱞᱟᱭᱤᱱ (AI ᱮᱠᱴᱤᱵᱷ)',
+    offlineMode: 'ᱚᱯᱷᱞᱟᱭᱤᱱ (ᱛᱷᱟᱹᱭᱤ ᱰᱮᱴᱟ)',
+    selectGrade: 'ᱪᱟᱱᱟᱪ ᱵᱟᱪᱷᱟᱣ:',
+    playAudio: 'ᱟᱧᱡᱚᱢ ᱢᱮ',
+    slowAudio: 'ᱵᱟᱹᱭ-ᱵᱟᱹᱭᱛᱮ ᱟᱧᱡᱚᱢ',
+    copy: 'ᱱᱚᱠᱚᱞ',
+    copied: 'ᱱᱚᱠᱚᱞ ᱮᱱᱟ!',
+    reset: 'ᱫᱚᱦᱲᱟ',
+    save: 'ᱥᱟᱧᱪᱟᱣ',
+    print: 'ᱪᱷᱟᱯᱟ / PDF ᱰᱟᱣᱩᱱᱞᱚᱰ',
+    loading: 'ᱛᱟᱺᱜᱤ ᱢᱮ...',
+    error: 'ᱵᱷᱩᱞ ᱮᱱᱟ᱾ ᱟᱨᱦᱚᱸ ᱨᱤᱠᱟᱹᱭ ᱢᱮ᱾',
+
+    // Voice & Translation
+    transTitle: 'ᱦᱤᱱᱫᱤ ⇄ ᱥᱟᱱᱛᱟᱲᱤ ᱨᱚᱲ ᱟᱨ ᱚᱞ ᱛᱚᱨᱡᱚᱢᱟ',
+    transDesc: 'ᱨᱚᱲ ᱠᱟᱛᱮ ᱥᱮ ᱚᱞ ᱠᱟᱛᱮ ᱦᱤᱱᱫᱤ ᱠᱷᱚᱱ ᱚᱞ ᱪᱤᱠᱤ ᱨᱮ ᱵᱚᱫᱚᱞ ᱢᱮ᱾',
+    micRecord: 'ᱢᱟᱭᱤᱠ ᱞᱤᱱ ᱠᱟᱛᱮ ᱨᱚᱲ ᱢᱮ',
+    recording: 'ᱟᱧᱡᱚᱢᱮᱫ-ᱟᱭ... ᱨᱚᱲ ᱢᱮ',
+    stopRecording: 'ᱛᱷᱟᱢᱵᱷᱟᱣ',
+    speakHint: 'ᱡᱮᱞᱮᱠᱟ: "ᱯᱩᱛᱷᱤ ᱡᱷᱤᱡᱽ ᱢᱮ" ᱥᱮ "ᱛᱮᱦᱮᱧ ᱜᱤᱫᱽᱨᱟᱹ ᱠᱚ ᱠᱩᱥᱤ ᱢᱮᱱᱟᱜ ᱠᱚᱣᱟ"',
+    translateBtn: 'ᱛᱚᱨᱡᱚᱢᱟᱭ ᱢᱮ',
+    quickPhrasesTitle: 'ᱟᱥᱲᱟ ᱨᱮ ᱫᱤᱱᱟᱹᱢ ᱞᱟᱹᱠᱛᱤᱭᱟᱱ ᱨᱚᱲ',
+    olChikiScript: 'ᱚᱞ ᱪᱤᱠᱤ',
+    devanagariPhonetic: 'ᱫᱮᱣᱱᱟᱜᱽᱨᱤ ᱯᱟᱲᱦᱟᱣ ᱜᱚᱲᱚ',
+    romanPhonetic: 'ᱨᱳᱢᱟᱱ ᱯᱟᱲᱦᱟᱣ ᱜᱚᱲᱚ',
+    classroomTip: 'ᱢᱟᱪᱮᱛ ᱠᱚ ᱞᱟᱹᱜᱤᱫ ᱫᱤᱥᱟᱹ:',
+    wordBreakdown: 'ᱟᱹᱲᱟᱹ ᱨᱮᱭᱟᱜ ᱢᱮᱱᱮᱛ:',
+
+    // Curriculum & Story
+    currTitle: 'ᱱᱤᱯᱩᱱ ᱵᱷᱟᱨᱚᱛ ᱢᱩᱲᱩᱛ ᱚᱞ-ᱯᱟᱲᱦᱟᱣ ᱟᱨ ᱞᱮᱠᱷᱟ (FLN)',
+    currDesc: 'ᱵᱟᱞᱵᱷᱟᱴᱤᱠᱟ ᱠᱷᱚᱱ ᱪᱟᱱᱟᱪ ᱓ ᱫᱷᱟᱹᱵᱤᱡ ᱵᱟᱨ-ᱯᱟᱹᱨᱥᱤ ᱠᱟᱹᱦᱱᱤ ᱟᱨ ᱯᱟᱲᱦᱟᱣ᱾',
+    generateStoryBtn: 'ᱱᱟᱣᱟ ᱠᱟᱹᱦᱱᱤ ᱵᱮᱱᱟᱣ ᱢᱮ (AI)',
+    theme: 'ᱥᱟᱛᱟᱢ / ᱛᱷᱤᱢ:',
+    competency: 'ᱫᱟᱲᱮ:',
+    storyReader: 'ᱵᱟᱨ-ᱯᱟᱹᱨᱥᱤ ᱠᱟᱹᱦᱱᱤ ᱯᱟᱲᱦᱟᱣ',
+    comprehensionQ: 'ᱵᱩᱡᱷᱟᱹᱣ ᱠᱩᱠᱞᱤ (Comprehension Questions)',
+    vocabHeader: 'ᱠᱟᱹᱦᱱᱤ ᱨᱮᱭᱟᱜ ᱢᱩᱬ ᱟᱹᱲᱟᱹ',
+    readAloudStory: 'ᱡᱚᱛᱚ ᱠᱟᱹᱦᱱᱤ ᱟᱧᱡᱚᱢ ᱢᱮ',
+
+    // Worksheets
+    worksheetTitle: 'ᱵᱟᱨ-ᱯᱟᱹᱨᱥᱤ ᱠᱟᱹᱢᱤ ᱥᱟᱠᱟᱢ ᱵᱮᱱᱟᱣᱤᱡ',
+    worksheetDesc: 'ᱟᱹᱛᱩ ᱤᱛᱩᱱ ᱟᱥᱲᱟ ᱞᱟᱹᱜᱤᱫ ᱪᱷᱟᱯᱟ ᱜᱟᱱᱚᱜ ᱠᱟᱹᱢᱤ ᱥᱟᱠᱟᱢ᱾',
+    generateWorksheetBtn: 'ᱱᱟᱣᱟ ᱠᱟᱹᱢᱤ ᱥᱟᱠᱟᱢ ᱵᱮᱱᱟᱣ ᱢᱮ',
+    worksheetPrintTip: 'ᱱᱚᱣᱟ ᱥᱟᱠᱟᱢ ᱢᱚᱵᱟᱭᱤᱞ ᱠᱷᱚᱱ ᱪᱷᱟᱯᱟ ᱢᱮ ᱥᱮ WhatsApp ᱛᱮ ᱠᱩᱞ ᱢᱮ᱾',
+
+    // Flashcards & Tracing
+    flashcardTitle: 'ᱪᱤᱛᱟᱹᱨ ᱠᱟᱨᱰ ᱟᱨ ᱚᱞ ᱪᱤᱠᱤ ᱪᱤᱠᱤ ᱚᱞ',
+    flashcardDesc: 'ᱠᱟᱨᱰ ᱩᱞᱴᱟᱹᱣ ᱠᱟᱛᱮ ᱟᱹᱲᱟᱹ ᱪᱮᱫᱚᱜ ᱢᱮ ᱟᱨ ᱥᱞᱮᱴ ᱨᱮ ᱚᱞ ᱢᱮ᱾',
+    flipCard: 'ᱠᱟᱨᱰ ᱩᱞᱴᱟᱹᱣ',
+    tracingTitle: 'ᱰᱤᱡᱤᱴᱟᱞ ᱥᱞᱮᱴ: ᱚᱞ ᱪᱤᱠᱤ ᱪᱤᱠᱤ ᱚᱞ ᱨᱤᱠᱟᱹ',
+    clearSlate: 'ᱥᱞᱮᱴ ᱯᱷᱟᱨᱪᱟᱭ ᱢᱮ',
+    strokeColor: 'ᱥᱤᱭᱟᱹᱦᱤ ᱨᱚᱝ:',
+
+    // Assessment Tracker
+    trackingTitle: 'ᱯᱟᱹᱴᱷᱩᱣᱟᱹ ᱯᱟᱲᱦᱟᱣ ᱞᱤᱸᱜᱤᱱ ᱟᱨ ᱡᱚᱠᱷᱟ ᱴᱨᱮᱠᱟᱨ',
+    trackingDesc: 'ᱤᱱᱴᱚᱨᱱᱮᱴ ᱵᱟᱹᱱᱩᱜ ᱨᱮᱦᱚᱸ WPM ᱟᱨ ᱱᱚᱢᱵᱚᱨ ᱥᱟᱧᱪᱟᱣ ᱫᱚᱦᱚᱭ ᱢᱮ᱾',
+    addStudent: 'ᱱᱟᱣᱟ ᱯᱟᱹᱴᱷᱩᱣᱟᱹ ᱥᱮᱞᱮᱫ',
+    recordFluency: 'ᱯᱟᱲᱦᱟᱣ ᱞᱤᱸᱜᱤᱱ (WPM) ᱡᱚᱠᱷᱟ',
+    totalStudents: 'ᱡᱚᱛᱚ ᱯᱟᱹᱴᱷᱩᱣᱟᱹ',
+    avgWpm: 'ᱪᱟᱱᱟᱪ ᱨᱮᱭᱟᱜ ᱜᱩᱴ WPM',
+    targetWpm: 'ᱱᱤᱯᱩᱱ ᱡᱚᱥ (ᱪᱟᱱᱟᱪ ᱒-᱓)',
+    exportData: 'ᱰᱮᱴᱟ ᱵᱟᱦᱨᱮ (JSON/ᱵᱮᱠᱟᱯ)',
+  },
+
+  en: {
+    appTitle: 'Santhali-Hindi Teacher Assistant',
+    appSubtitle: 'NIPUN Bharat (FLN) Bilingual Teaching & Learning Platform',
+    navTranslate: 'Speech & Translation',
+    navCurriculum: 'FLN Curriculum & Stories',
+    navWorksheets: 'Worksheets & Print',
+    navFlashcards: 'Flashcards & Letter Tracing',
+    navTracking: 'Student Fluency & Tracker',
+    navOffline: 'Offline & Android PWA',
+
+    // Header & Common
+    language: 'Language:',
+    onlineMode: 'Online (AI Active)',
+    offlineMode: 'Offline Mode (Local Data)',
+    selectGrade: 'Select Grade:',
+    playAudio: 'Listen Audio',
+    slowAudio: 'Slow Audio (Classroom)',
+    copy: 'Copy',
+    copied: 'Copied!',
+    reset: 'Reset',
+    save: 'Save',
+    print: 'Print / Save PDF',
+    loading: 'Processing...',
+    error: 'An error occurred. Please try again.',
+
+    // Voice & Translation
+    transTitle: 'Hindi ⇄ Santhali Speech & Text Translation',
+    transDesc: 'Convert spoken or typed Hindi into authentic Ol Chiki (ᱚᱞ ᱪᱤᱠᱤ) with Devanagari reading guides.',
+    micRecord: 'Tap to Speak (Mic)',
+    recording: 'Listening... Speak now',
+    stopRecording: 'Stop Recording',
+    speakHint: 'e.g. "Open your book and read" or "Welcome students"',
+    translateBtn: 'Translate with Gemini',
+    quickPhrasesTitle: 'Teacher Classroom Quick Phrases',
+    olChikiScript: 'Ol Chiki Script (ᱚᱞ ᱪᱤᱠᱤ)',
+    devanagariPhonetic: 'Devanagari Phonetic Guide (for Teachers)',
+    romanPhonetic: 'Roman Pronunciation Guide',
+    classroomTip: 'Pedagogy / Classroom Tip:',
+    wordBreakdown: 'Word-by-Word Breakdown:',
+
+    // Curriculum & Story
+    currTitle: 'NIPUN Bharat Foundational Literacy & Numeracy (FLN)',
+    currDesc: 'Competency-mapped bilingual reading stories and learning outcomes from Balvatika to Class 3.',
+    generateStoryBtn: 'Generate New FLN Story (AI)',
+    theme: 'Theme:',
+    competency: 'Competency:',
+    storyReader: 'Bilingual Story Reader',
+    comprehensionQ: 'Comprehension Questions',
+    vocabHeader: 'Key Vocabulary Words',
+    readAloudStory: 'Listen to Full Story',
+
+    // Worksheets
+    worksheetTitle: 'Bilingual Worksheet Generator',
+    worksheetDesc: 'Printable activity worksheets designed for rural primary school printing and parent sharing.',
+    generateWorksheetBtn: 'Generate New Worksheet',
+    worksheetPrintTip: 'Ready-to-print A4 worksheet with school header, matching tasks, and Ol Chiki handwriting lines.',
+
+    // Flashcards & Tracing
+    flashcardTitle: 'Visual Flashcards & Ol Chiki Letter Tracing',
+    flashcardDesc: 'Learn bilingual words with interactive flip cards and practice writing Ol Chiki letters on the digital slate.',
+    flipCard: 'Flip Card',
+    tracingTitle: 'Digital Slate: Ol Chiki Letter Tracing',
+    clearSlate: 'Clear Slate',
+    strokeColor: 'Ink Color:',
+
+    // Assessment Tracker
+    trackingTitle: 'Student Reading Fluency & Assessment Tracker',
+    trackingDesc: 'Works 100% offline. Measure Words Per Minute (WPM) and save student competencies.',
+    addStudent: 'Add Student',
+    recordFluency: 'Record Oral Reading Fluency',
+    totalStudents: 'Total Students',
+    avgWpm: 'Class Average WPM',
+    targetWpm: 'NIPUN Target (Class 2-3: 45-60 WPM)',
+    exportData: 'Export Data (JSON/Backup)',
+  },
+};
